@@ -60,7 +60,7 @@
   
 .post-details .blog-title {
     font-size: 1.2rem;
-    padding: 0.3rem 0rem 0.3rem;
+    padding: 0.4rem 0rem;
     letter-spacing: 1px;
 }
   
@@ -134,10 +134,10 @@ figure img {
 /* DESTINATIONS */
 
 .featured-destination {
-    padding: 3% 0% 8%;
+    padding-top: 3%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 440px;
+    grid-template-rows: auto;
     gap: 3rem;
 }
 
@@ -150,20 +150,16 @@ figure img {
     padding-top: 2%;
 }
 
-.destination .blog-title {
-  font-size: 1.1rem;
-}
-
 .destination .small-title {
   font-size: .87rem;
 }
 
-.destination {
-    position: relative;
+.destination .post-details {
+    padding: 9% 0%;
 }
 
 .destination img {
-    height: 88%;
+    height: 400px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
