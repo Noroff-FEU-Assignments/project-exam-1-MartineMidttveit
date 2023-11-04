@@ -1,0 +1,354 @@
+html {
+    font-size: 18px;
+    color: #233F3F;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    color: #1E1A16;
+    background-color: #e6e2e0;
+}
+
+/* FONTS, HEADLINES & SUBTITLES */
+
+p {
+    color: #1E1A16;
+    line-height: 1.5;
+}
+
+p, h1, h2, h3, h4, a, figure {
+    margin: 0;
+}
+
+h1, h2, h3, h4, .date, button, .view-all {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.yellow {
+    color: #FFA53A;
+}
+
+.turquoise {
+    color: #087268;
+}
+
+.big-title, .medium-title, .small-title, button {
+    font-weight: 500;
+}
+
+.big-title {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    padding: 3% 0%;
+}
+
+.medium-title {
+    font-size: 1.4rem;
+    padding-bottom: 3%;
+    font-weight: 500;
+}
+
+.blog-title {
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .6rem 0rem .8rem;
+}
+
+.small-title {
+    font-size: 1rem;
+}
+
+.date,
+button {
+    font-size: .9rem;
+}
+
+.bold {
+    font-weight: 500;
+} /* SJEKKE OM JEG BRUKER DENNE*/
+
+.underline {
+    border-bottom: 1px solid #1E1A16;
+    color: #1E1A16;
+} /* SJEKKE OM JEG BRUKER DENNE*/
+
+.underline:hover {
+    border-bottom: 1px solid #087268;
+    color: #087268;
+    font-weight: 500;
+    transition: .5s;
+} /* SJEKKE OM JEG BRUKER DENNE*/
+
+/* BUTTONS */
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    max-width: 180px;
+}
+
+.turquoise-button,
+.border-button {
+    max-width: 180px;
+}
+
+.turquoise-button,
+.light-button {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    border: none;
+}
+
+.turquoise-button,
+.light-button,
+.border-button {
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+}
+
+.border-button {
+    background-color: transparent;
+    border: 1px solid #1E1A16;
+    color: #1E1A16;
+    margin-top: 7%;
+}
+
+.border-button:hover {
+    background-color: #F6A63F;
+    color: #1E1A16;
+    border: 1px solid #F6A63F;
+    transition: .4s;
+}
+
+.turquoise-button {
+    margin-top: 4%;
+    color: #FDFCFB;
+    background-color: #087268;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.light-button {
+    background-color: #FDFCFB;
+    color: #1E1A16;
+    max-width: 230px;
+}
+
+.turquoise-button:hover,
+.light-button:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.viewAll {
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid #F6A63F;
+    width: 80px;
+}
+
+.view-all:hover {
+    font-weight: 600;
+    transition: .2s;
+}
+
+.view-all {
+    color: #1E1A16;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.arrow-left,
+.arrow-right {
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  background: rgba(244, 244, 244, 0.75);
+  backdrop-filter: blur(10.5px);
+  border: none;
+  font-size: 1.1rem;
+  color: #1E1A16;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0.2, 0.1);
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* DISPLAYS */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTAINERS */
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1800px;
+    position: relative;
+    top: 8.5rem;
+    background-color: #FDFCFB;
+}
+
+.palms-container {
+    background-image: url(/IMAGES/Contact/background.jpg);
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+/* MEASUREMENTS */
+
+.size {
+    height: 100%;
+    width: 100%
+}
+
+/* IMAGES */
+
+img {
+    object-fit: cover;
+}
+
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rounded {
+    border-radius: 15px;
+}
+
+.half-rounded {
+    border-radius: 15px 15px 0px 0px;
+}
+
+/* LINE */
+
+.line {
+    height: 1px;
+    background-color: #1E1A16;
+    width: 80%;
+    margin: 20% 0%;
+}
+
+/* E-BOOK */ 
+
+.eBook {
+    padding: 5% 25%;
+    margin-bottom: 8.5%;
+    background-color: #087268;
+    color: #FDFCFB;
+    text-align: center;
+}
+
+.eBook p {
+    color: #FDFCFB;
+}
+
+.signUp {
+    flex-direction: column;
+}
+
+.email {
+    padding-top: 3%;
+    width: 50%;
+}
+
+.email input {
+    width: 100%;
+    padding-left: 5%;
+}
+
+/* INSTAGRAM-POSTS */
+
+.instagram-posts {
+    display: grid;
+}
+
+.insta-img {
+    position: relative;
+}
+
+.filter {
+    background: rgba(255, 255, 255, 0.21);
+    position: absolute;
+    opacity: 0;
+}
+
+.filter:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+/* FORMS */
+
+input,
+textarea {
+    border-radius: 6px;
+    height: 2.3rem;
+    border: none;
+}
+
+input::placeholder,
+textarea {
+    color: #1E1A16;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+    .wrapper {
+        top: 7.5rem;
+    }
+
+    .viewAll,
+    .cathegories .viewAll {
+        width: 45px;
+    }
+
+    .viewAll a.view-all {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    p {
+        font-size: .8rem;
+    }
+
+    .turquoise-button,
+    .light-button,
+    .border-button {
+        padding: 0.5rem 1.5rem;
+        font-size: .8rem;
+        max-width: 150px;
+    }
+}
