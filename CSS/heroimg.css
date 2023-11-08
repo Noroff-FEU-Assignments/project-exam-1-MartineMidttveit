@@ -68,12 +68,16 @@
     height: 100%;
     margin-top: 0;
   }
-    
-  .img-2 {
-    transform: translateX(120%);
+
+  .img-2,
+  .img-7 {
     width: 90%;
     height: 90%;
     margin-top: 5%;
+  }
+    
+  .img-2 {
+    transform: translateX(120%);
   }
     
   .img-3 {
@@ -99,9 +103,6 @@
   .img-7 {
     transform: translateX(-110%);
     opacity: 0;
-    width: 90%;
-    height: 90%;
-    margin-top: 5%;
   }
   
   .arrow-buttons {
