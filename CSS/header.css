@@ -22,6 +22,10 @@ header,
     color: #1E1A16;
 }
 
+.nav-link:hover {
+    font-weight: 600;
+}
+
 .banner {
     height: 4rem;
     background-color: #FDFCFB;
