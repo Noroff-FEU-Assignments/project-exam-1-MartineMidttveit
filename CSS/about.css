@@ -1,6 +1,7 @@
 .palms-container {
     padding: 8% 10%;
     gap: 4rem;
+    background-image: url(/IMAGES/About/map.png);
 }
 
 .palms-container img {

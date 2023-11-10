@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Travel with Estelle. I'm a travel enthusiast and I like to share my adventures. Feel free to tag along!">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Tenor+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/frontpage.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/allposts.css">
+
+    <title>Travel with Estelle | Posts</title>
+
+    <script defer src="/JS/filter.js"></script>
+  </head>
+<body>
+
+<!--HEADER-->
+
+<header class="flex-center">
+    <a href="/index.html">TRAVEL WITH ESTELLE</a>
+</header>
+
+<div class="banner flex-center">
+  <nav class="header-nav flex-space">
+    <a href="/HTML/contact.html" class="nav-link">CONTACT</a>
+    <a href="/HTML/about.html" class="nav-link">ABOUT</a>
+    <a href="/HTML/allposts.html" class="nav-link">POSTS</a>
+    </nav>
+</div>
+
+<!--WRAPPER START -->
+
+<div class="wrapper">
+
+<!--TOP-->
+
+<div class="top background flex-center">
+  <div class="archive flex-center">
+    <h1 class="medium-title turquoise">ALL POSTS</h2>
+    <h2 class="small-title flex-center">SEARCH THROUGH THE ARCHIVE</h1>
+    <form class="search flex-center">
+        <input type="text" name="searchbar" aria-label="Search through all blog posts" placeholder="Search...">
+        <button id="search" class="flex-center"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </div>
+</div>
+
+<!--SORTING-->
+
+<div class="filterSort flex-space">
+    <button class="sorting-titles flex-center" id="filterBtn">
+        <img src="/Images/Allposts/filter.png" alt="filter icon">
+        FILTER
+    </button>
+
+    <form action="#" class="sorting">
+        <label for="sortBy" class="sorting-titles flex-center">SORT BY:</label>
+        <select name="sort-by" id="sortBy">
+            <option value="sortingOption">SHOW ALL</option>
+            <option value="all">2023</option>
+            <option value="oldPosts">2022</option>
+            <option value="oldPosts">2021</option>
+            <option value="oldPosts">2020</option>
+            <option value="oldPosts">2019</option>
+            <option value="oldPosts">2018</option>
+            <option value="oldPosts">2017</option>
+            <option value="oldPosts">2016</option>
+        </select>
+    </form>
+
+    
+<div class="filter-open flex">
+    <div class="close">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <h3 class="filter-title">DESTINATIONS</h3>
+
+    <details class="continent">
+        <summary>AFRICA</summary>
+        
+                <div class="countries">
+                    <input type="checkbox" id="Zimbabwe" name="Zimbabwe" value="Zimbabwe">
+                    <label for="Zimbabwe">Zimbabwe</label>
+                </div>
+        
+                <div class="countries">
+                    <input type="checkbox" id="Cape Town" name="Cape Town" value="Cape Town">
+                    <label for="Cape Town">Cape Town</label>
+                </div>
+        
+                <div class="countries">
+                    <input type="checkbox" id="Tanzania" name="Tanzania" value="Tanzania">
+                    <label for="Tanzania">Tanzania</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="seeAllAfrica" name="seeAllAfrica" value="seeAllAfrica">
+                    <label for="seeAllAfrica">SEE ALL</label>
+                </div>
+            </details>
+
+            <details class="continent">
+            <summary>EUROPE</summary>
+
+                <div class="countries">
+                    <input type="checkbox" id="Spain" name="Spain" value="Spain">
+                    <label for="Spain">Spain</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="France" name="France" value="France">
+                    <label for="France">France</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="Italy" name="Italy" value="Italy">
+                    <label for="Italy">Italy</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="Norway" name="Norway" value="Norway">
+                    <label for="Norway">Norway</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="seeAllEurope" name="seeAllEurope" value="seeAllEurope">
+                    <label for="seeAllEurope">SEE ALL</label>
+                </div>
+            </details>
+
+            <details class="continent">
+                <summary>ASIA</summary>
+
+                <div class="countries">
+                    <input type="checkbox" id="Maldives" name="Maldives" value="Maldives">
+                    <label for="Maldives">Maldives</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="Indonesia" name="Indonesia" value="Indonesia">
+                    <label for="Indonesia">Indonesia</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="Thailand" name="Thailand" value="Thailand">
+                    <label for="Thailand">Thailand</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="seeAllAsia" name="seeAllAsia" value="seeAllAsia">
+                    <label for="seeAllAsia">SEE ALL</label>
+                </div>
+            </details>
+
+            <details class="continent">
+                <summary>AMERICA</summary>
+
+                <div class="countries">
+                    <input type="checkbox" id="New York" name="New York" value="New York">
+                    <label for="New York">New York</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="Texas" name="Texas" value="Texas">
+                    <label for="Texas">Texas</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="Canada" name="Canada" value="Canada">
+                    <label for="Canada">Canada</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="California" name="California" value="California">
+                    <label for="California">California</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="Miami" name="Miami" value="Miami">
+                    <label for="Miami">Miami</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="seeAllAmerica" name="seeAllAmerica" value="seeAllAmerica">
+                    <label for="seeAllAmerica">SEE ALL</label>
+                </div>
+            </details>
+
+            <details class="continent">
+                <summary>OCEANIA</summary>
+
+                <div class="countries">
+                    <input type="checkbox" id="Australia" name="Australia" value="Australia">
+                    <label for="Australia">Australia</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="New Zealand" name="New Zealand" value="New Zealand">
+                    <label for="New Zealand">New Zealand</label>
+                </div>
+
+                <div class="countries">
+                    <input type="checkbox" id="seeAllOceania" name="seeAllOceania" value="seeAllOceania">
+                    <label for="seeAllOceania">SEE ALL</label>
+                </div>
+            </details>
+
+            <h3 class="filter-title">CATHEGORY</h3>
+            <h3 class="filter-title">PRICE RANGE</h3>
+            <h3 class="filter-title">AGE LIMIT</h3>
+            <h3 class="filter-title">MY RATING</h3>
+        </div>
+    </div>
+
+<!--ALL POSTS-->
+
+<div class="post-grid">
+    <a href="#" class="post size rounded">
+        <figure class="rounded size">
+          <img src="/IMAGES/Frontpage/hero-2.jpg" alt="" class="size rounded">
+
+          <figcaption class="post-details flex-center">
+            <h3 class="small-title turquoise">ATTRACTIONS, AFRICA</h3>
+            <h4 class="blog-title">ON THE SAVANNAH</h4>
+            <span class="date">Published: 04.11.2023</span>
+            <button class="border-button">READ MORE</button>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="post size rounded">
+        <figure class="rounded size">
+          <img src="/IMAGES/Frontpage/hero-6.jpg" alt="" class="size rounded">
+
+          <figcaption class="post-details flex-center">
+            <h3 class="small-title turquoise">ATTRACTIONS, AFRICA</h3>
+            <h4 class="blog-title">ON THE SAVANNAH</h4>
+            <span class="date">Published: 04.11.2023</span>
+            <button class="border-button">READ MORE</button>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="post size rounded">
+        <figure class="rounded size">
+          <img src="/IMAGES/Frontpage/hero-7.jpg" alt="" class="size rounded">
+
+          <figcaption class="post-details flex-center">
+            <h3 class="small-title turquoise">ATTRACTIONS, AFRICA</h3>
+            <h4 class="blog-title">ON THE SAVANNAH</h4>
+            <span class="date">Published: 04.11.2023</span>
+            <button class="border-button">READ MORE</button>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="post size rounded">
+        <figure class="rounded size">
+          <img src="/IMAGES/Frontpage/hero-2.jpg" alt="" class="size rounded">
+          <figcaption class="post-details flex-center">
+            <h3 class="small-title turquoise">ATTRACTIONS, AFRICA</h3>
+            <h4 class="blog-title">ON THE SAVANNAH</h4>
+            <span class="date">Published: 04.11.2023</span>
+            <button class="border-button">READ MORE</button>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="post size rounded">
+        <figure class="rounded size">
+          <img src="/IMAGES/Frontpage/hero-6.jpg" alt="" class="size rounded">
+          <figcaption class="post-details flex-center">
+            <h3 class="small-title turquoise">ATTRACTIONS, AFRICA</h3>
+            <h4 class="blog-title">ON THE SAVANNAH</h4>
+            <span class="date">Published: 04.11.2023</span>
+            <button class="border-button">READ MORE</button>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="post size rounded">
+        <figure class="rounded size">
+          <img src="/IMAGES/Frontpage/hero-7.jpg" alt="" class="size rounded">
+          <figcaption class="post-details flex-center">
+            <h3 class="small-title turquoise">ATTRACTIONS, AFRICA</h3>
+            <h4 class="blog-title">ON THE SAVANNAH</h4>
+            <span class="date">Published: 04.11.2023</span>
+            <button class="border-button">READ MORE</button>
+          </figcaption>
+        </figure>
+      </a>
+
+    <a href="#" class="post size rounded">
+        <figure class="rounded size">
+          <img src="/IMAGES/Frontpage/hero-2.jpg" alt="" class="size rounded">
+          <figcaption class="post-details flex-center">
+            <h3 class="small-title turquoise">ATTRACTIONS, AFRICA</h3>
+            <h4 class="blog-title">ON THE SAVANNAH</h4>
+            <span class="date">Published: 04.11.2023</span>
+            <button class="border-button">READ MORE</button>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="post size rounded">
+        <figure class="rounded size">
+          <img src="/IMAGES/Frontpage/hero-6.jpg" alt="" class="size rounded">
+
+          <figcaption class="post-details flex-center">
+            <h3 class="small-title turquoise">ATTRACTIONS, AFRICA</h3>
+            <h4 class="blog-title">ON THE SAVANNAH</h4>
+            <span class="date">Published: 04.11.2023</span>
+            <button class="border-button">READ MORE</button>
+          </figcaption>
+        </figure>
+      </a>
+
+      <a href="#" class="post size rounded">
+        <figure class="rounded size">
+          <img src="/IMAGES/Frontpage/hero-6.jpg" alt="" class="size rounded">
+
+          <figcaption class="post-details flex-center">
+            <h3 class="small-title turquoise">ATTRACTIONS, AFRICA</h3>
+            <h4 class="blog-title">ON THE SAVANNAH</h4>
+            <span class="date">Published: 04.11.2023</span>
+            <button class="border-button">READ MORE</button>
+          </figcaption>
+        </figure>
+      </a>
+</div>
+<button class="viewMore">VIEW MORE POSTS</button>
+
+<!-- E-BOOK -->
+
+<div class="eBook flex-column">
+    <div class="signUp flex-center">
+        <h2 class="blog-title">GET MY E-BOOK FOR FREE</h2>
+        <p>
+            Get my e-book on travel for free by entering your e-mail, unlocking a world of exciting destinations and travel tips. 
+            Grab your copy now and embark on your next adventure without spending a dime!
+        </p>
+
+        <form class="email">
+            <input type="text" placeholder="Your e-mail...">
+        </form>
+    </div>
+</div>
+
+<!--WRAPPER END -->
+
+</div>
+
+<footer></footer>
+
+</body>
+</html>
