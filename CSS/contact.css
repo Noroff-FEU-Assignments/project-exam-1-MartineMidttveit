@@ -3,6 +3,7 @@
 .palms-container {
     padding: 8% 17% 8% 10%;
     gap: 9rem;
+    background-image: url(/IMAGES/Contact/background.jpg);
 }
 
 .contact-form {
