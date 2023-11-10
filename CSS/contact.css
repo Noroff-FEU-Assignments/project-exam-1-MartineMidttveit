@@ -1,0 +1,269 @@
+/* CONTACT */
+
+.palms-container {
+    padding: 8% 17% 8% 10%;
+    gap: 9rem;
+}
+
+.contact-form {
+    flex-direction: column;
+    width: 40%;
+}
+
+.palms-container .big-title {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.contact-form .turquoise-button {
+    margin: 0;
+}
+
+.palms-container img {
+    height: 80%;
+    width: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info {
+    gap: 1rem;
+    width: 100%;
+    position: relative;
+}
+
+.contact-info input,
+.contact-info textarea {
+    padding-left: 5%;
+}
+
+.contact-info input:focus,
+.contact-info textarea:focus {
+    outline: 1px solid #6058558b;
+}
+
+.textarea {
+    width: 100%;
+}
+
+.contact-info textarea {
+    padding-top: 3%;
+    height: 12rem;
+}
+
+.characters-1 {
+    display: flex;
+    align-self: end;
+    font-size: .9rem;
+}
+
+.name.invalid,
+.email-address.invalid {
+    border: 1px solid rgba(255, 0, 0, 0.579);
+}
+
+.error-name::after,
+.error-email::before,
+.error-message::before {
+    background: rgba(203, 12, 12, 0.865);
+    padding: 0.3rem 1rem;
+    color: #fff;
+    border-radius: 0.3rem;
+    position: absolute;
+}
+
+.error-name::after {
+    content: "Minimum 5 characters";
+    right: -50%;
+    top: 0%;
+  }
+  
+  .error-email::before {
+    content: "Not a valid email";
+    right: -50%;
+    top: 17%;
+  }
+
+  .error-message {
+    position: relative;
+  }
+
+  .error-message::before {
+    content: "Must be 25 characters";
+    right: -50%;
+    top: 0;
+  }
+
+/* INSTAGRAM */
+
+.social-media {
+    padding: 6% 10% 3%;
+}
+
+.instagram-details {
+    width: 50%;
+}
+
+.instagram {
+    display: flex;
+    gap: 2rem;
+    padding: 3% 0% 4%;
+}
+
+.small-title {
+    padding-bottom: 2%;
+}
+
+.profile-description {
+    display: flex;
+    gap: .8rem;
+}
+
+.instagram-posts {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 330px;
+    gap: 2rem;
+    padding: 0% 10% 8%;
+}
+
+.insta-img:hover {
+    transform: translateY(-5px);
+    transition: .5s;
+}
+
+/* SOCIAL MEDIA */
+
+.social-platforms {
+    gap: .5rem;
+    align-items: center;
+    margin-top: 10.5%;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    padding: .5rem 0rem;
+    color: #087268;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* MOBILE & IPAD */
+
+@media (min-width: 0px) and (max-width: 1180px) {
+    .palms-container {
+        flex-direction: column;
+    }
+
+    .social-platforms {
+        display: none;
+    }
+
+    .instagram-details {
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .palms-container {
+        padding: 12% 10% 15%;
+        gap: 1.5rem;
+    }
+    
+    .palms-container img {
+        width: 100%;
+    }
+
+    .palms-container .big-title {
+        font-size: 1.2rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .characters-1,
+    .bold {
+        font-size: .8rem;
+    }
+
+    .profile-details p {
+        font-size: .75rem;
+    }
+
+    .social-media {
+        padding: 15% 10% 6%;
+    }
+
+    .instagram {
+        width: 100%;
+        gap: 1rem;
+        justify-content: space-between;
+        padding: 5% 0% 6%;
+    }
+
+    .instagram-posts {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 150px 150px;
+        gap: 1rem;
+        padding-bottom: 17%;
+    }
+
+    .instagram-posts .rounded {
+        border-radius: 0;
+    }
+}
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 1180px) {
+    .palms-container {
+        gap: 2rem;
+        padding: 10%;
+    }
+
+    .palms-container img {
+        width: 60%;
+    }
+
+    .contact-form {
+        width: 75%;
+    }
+
+    .social-media {
+        padding: 10% 10% 5%;
+    }
+
+    .instagram {
+        width: 75%;
+    }
+
+    .instagram {
+        justify-content: space-between;
+    }
+
+    .instagram img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .instagram-posts {
+        grid-template-rows: 150px;
+        gap: 1rem;
+        padding-bottom: 12%;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1181px) and (max-width: 1440px) {
+    .instagram-posts {
+        grid-template-rows: 250px;
+    }
+}

@@ -1,0 +1,249 @@
+.palms-container {
+    padding: 8% 10%;
+    gap: 4rem;
+}
+
+.palms-container img {
+    width: 35%;
+    height: 85%;
+    transform: rotate(-4deg);
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text p {
+    margin-bottom: 3%;
+}
+
+.about-text .turquoise-button {
+    max-width: 190px;
+}
+
+/* JOURNEY */
+
+.journey {
+    padding: 6% 10% 0%;
+    gap: 5rem;
+}
+
+.myJourney .small-title {
+    padding-bottom: 2%;
+}
+
+.myJourney {
+    padding-bottom: 5%;
+}
+
+/* FUNFACTS */
+
+.funfacts {
+    gap: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.funfact {
+    border: 1px solid #087268;
+    padding: 10%;
+    flex-direction: column;
+    color: #032A26;
+    text-align: center;
+}
+
+.big {
+    font-size: 1.7rem;
+    padding-bottom: 5%;
+    font-weight: 500;
+}
+
+/* FAVORITE DESTINATION */
+
+.favorite-destination {
+    padding: 5% 10%;
+}
+
+.favorite-destination .headlines {
+    padding-bottom: 1rem;
+}
+
+.readMore {
+    color: #1E1A16;
+    display: flex;
+    gap: 2rem;
+}
+
+.readMore:hover {
+    color: #087268;
+    transition: .3s;
+    font-weight: 600;
+}
+
+/* SLIDESHOW */
+
+.slide-show {
+    height: 600px;
+    margin: 3% 0%;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider-img {
+    position: absolute;
+    max-height: 600px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.slider-img.active {
+    opacity: 1;
+}
+
+/* MOBILE & IPAD */
+
+@media (min-width: 0px) and (max-width: 1180px) {
+    .palms-container {
+        flex-direction: column;
+    }
+
+    .palms-container img {
+        transform: unset;
+    }
+
+    .about-text {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-text p {
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .palms-container {
+        gap: 2rem;
+        padding: 10% 10% 15%;
+    }
+
+    .palms-container img {
+        width: 80%;
+    }
+
+    .palms-container .turquoise-button {
+        margin-top: 8%;
+    }
+
+    .about-text p {
+        padding-bottom: 4%;
+    }
+
+    .journey {
+        padding: 15% 10% 10%;
+    }
+
+    .myJourney {
+        padding-bottom: 12%;
+    }
+
+    .myJourney .medium-title {
+        padding-bottom: 5%;
+    }
+
+    .myJourney p,
+    .seychelles p {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .funfacts {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .big {
+        font-size: 1.2rem;
+    }
+
+    .funfact {
+        font-size: .8rem;
+        padding: 8% 4%;
+    }
+
+    .favorite-destination {
+        padding: 7% 10% 0%;
+    }
+
+    .seychelles p {
+        padding-bottom: 10%;
+    }
+
+    .slide-show {
+        height: 300px;
+    }
+}
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 1180px) {
+    .palms-container {
+        gap: 3rem;
+        padding: 10%;
+    }
+
+    .palms-container img {
+        width: 50%;
+    }
+
+    .palms-container .turquoise-button {
+        margin-top: 6%;
+    }
+
+    .journey {
+        padding: 10% 10% 4%;
+    }
+
+    .myJourney {
+        padding-bottom: 7%;
+    }
+
+    .funfacts {
+        gap: 1rem;
+    }
+
+    .big {
+        font-size: 1.4rem;
+    }
+
+    .funfact {
+        font-size: .8rem;
+        padding: 12% 7%;
+    }
+
+    .favorite-destination {
+        padding: 5% 10% 0%;
+    }
+
+    .seychelles p {
+        padding-bottom: 4%;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1181px) and (max-width: 1440px) {
+    .about-text p {
+        width: 100%;
+    }
+}
