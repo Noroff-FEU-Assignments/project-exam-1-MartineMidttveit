@@ -19,6 +19,7 @@ header,
     color: #FDFCFB;
     font-family: 'Montserrat', sans-serif;
     padding: 7%;
+    color: #1E1A16;
 }
 
 .banner {
@@ -28,11 +29,11 @@ header,
     top: 4.5rem;
 }
 
-.banner a {
+header a {
     padding: 0% 4%;
     letter-spacing: 5px;
     font-size: 1.1rem;
-    color: #1E1A16;
+    color: #FDFCFB;
 }
 
 @media (min-width: 0) and (max-width:767px) {
