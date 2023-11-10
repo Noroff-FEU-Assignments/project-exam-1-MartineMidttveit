@@ -326,10 +326,6 @@ textarea {
     font-family: 'Montserrat', sans-serif;
 }
 
-.small-title {
-    text-align: center;
-}
-
 @media (min-width: 0) and (max-width: 767px) {
     .wrapper {
         top: 7.5rem;
