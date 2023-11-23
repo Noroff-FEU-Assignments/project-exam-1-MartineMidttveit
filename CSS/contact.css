@@ -1,0 +1,265 @@
+/* CONTACT */
+
+.background {
+    padding: 8% 17% 8% 10%;
+    gap: 9rem;
+    background-color: #F7F4F3;
+}
+
+.contact-form {
+    flex-direction: column;
+    width: 40%;
+}
+
+.background .big-title {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.contact-form .turquoise-button {
+    margin: 0;
+}
+
+.background img {
+    height: 80%;
+    width: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info {
+    gap: 1.4rem;
+    width: 100%;
+    position: relative;
+}
+
+.contact-info input,
+.contact-info textarea {
+    padding-left: 5%;
+}
+
+.contact-info input:focus,
+.contact-info textarea:focus {
+    outline: 1px solid #6058558b;
+}
+
+.textarea {
+    max-width: 100%;
+}
+
+.contact-info textarea {
+    padding-top: 3%;
+    height: 12rem;
+}
+
+.characters-1 {
+    display: flex;
+    align-self: end;
+    font-size: .9rem;
+}
+
+.contact-error {
+    color: #032A26;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: -1.2rem;
+    display: none;
+}
+
+.contact-box,
+.message {
+    position: relative;
+}
+
+/* INSTAGRAM */
+
+.social-media {
+    padding: 6% 10% 3%;
+}
+
+.icons-mobile {
+    display: none;
+}
+
+.instagram-details {
+    width: 50%;
+}
+
+.instagram {
+    display: flex;
+    gap: 2rem;
+    padding: 3% 0% 4%;
+}
+
+.profile-description {
+    display: flex;
+    gap: .8rem;
+}
+
+.instagram-posts {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 330px;
+    gap: 2rem;
+    padding: 0% 10% 8%;
+}
+
+.insta-img:hover {
+    transform: translateY(-5px);
+    transition: .5s;
+}
+
+/* SOCIAL MEDIA */
+
+.social-platforms {
+    gap: .5rem;
+    align-items: center;
+    margin-top: 10.5%;
+}
+
+.icons,
+.icons-mobile i {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    padding: .5rem 0rem;
+    color: #087268;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* MOBILE & IPAD */
+
+@media (min-width: 0px) and (max-width: 1180px) {
+    .background {
+        flex-direction: column;
+    }
+
+    .social-platforms {
+        display: none;
+    }
+
+    .instagram-details {
+        width: 100%;
+    }
+
+    .icons-mobile {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+/* MOBILE */
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .background {
+        padding: 12% 10% 15%;
+        gap: 1.5rem;
+    }
+    
+    .background img {
+        width: 100%;
+    }
+
+    .background .big-title {
+        font-size: 1.2rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .characters-1,
+    .bold {
+        font-size: .8rem;
+    }
+
+    .profile-details p {
+        font-size: .75rem;
+    }
+
+    .social-media {
+        padding: 15% 10% 6%;
+    }
+
+    .instagram {
+        width: 100%;
+        gap: 1rem;
+        justify-content: space-between;
+        padding: 5% 0% 6%;
+    }
+
+    .instagram-posts {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 150px 150px;
+        gap: 1rem;
+        padding-bottom: 6%;
+    }
+
+    .icons-mobile {
+        padding-bottom: 8%;
+    }
+
+    .instagram-posts .rounded {
+        border-radius: 0;
+    }
+
+    #send {
+        padding: .7rem 1.5rem;
+    }
+}
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 1180px) {
+    .background {
+        gap: 2rem;
+        padding: 10%;
+    }
+
+    .background img {
+        width: 60%;
+    }
+
+    .contact-form {
+        width: 75%;
+    }
+
+    .social-media {
+        padding: 10% 10% 5%;
+    }
+
+    .instagram {
+        width: 75%;
+    }
+
+    .instagram {
+        justify-content: space-between;
+    }
+
+    .instagram img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .instagram-posts {
+        grid-template-rows: 150px;
+        gap: 1rem;
+        padding-bottom: 4%;
+    }
+
+    .icons-mobile {
+        padding-bottom: 6%;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1181px) and (max-width: 1440px) {
+    .instagram-posts {
+        grid-template-rows: 250px;
+    }
+}
