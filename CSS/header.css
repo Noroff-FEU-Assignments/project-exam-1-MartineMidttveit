@@ -30,6 +30,9 @@ header {
 .header-nav {
     gap: 4rem;
     margin-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-link {
@@ -133,8 +136,7 @@ header {
         border: none;
     }
     
-    .header-nav{
-        display: none;
+    .header-nav {
         flex-direction: column;
         position: absolute;
         right: 0;
@@ -144,6 +146,7 @@ header {
         padding: 2rem 0 3rem;
         gap: 1rem;
         margin: 0;
+        display: none;
     }
 
     .nav-link {
@@ -152,21 +155,22 @@ header {
 }
 
 @media (min-width: 0) and (max-width:767px) {
-    .banner {
-        height: 3rem;
+    .header-content {
+        padding: 0 10%;
     }
 
-    .banner a {
-        font-size: 14px;
-    }
-
-    .nav-link {
-        font-size: 14px;
+    #logo {
+        font-size: .9rem;
     }
 
     .header-nav {
         width: 100%;
         margin: 0;
+    }
+
+    .hamburger-menu i {
+        font-size: 1.1rem;
+        padding: 25%;
     }
 }
 

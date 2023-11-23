@@ -225,6 +225,10 @@ img {
     flex-direction: column;
 }
 
+.signUpBtn {
+    margin-top: 1rem;
+}
+
 .email {
     padding-top: 3%;
     width: 60%;
@@ -237,6 +241,7 @@ img {
 
 .email-error {
     display: none;
+    padding-top: .7rem;
 }
 
 /* INSTAGRAM-POSTS */
