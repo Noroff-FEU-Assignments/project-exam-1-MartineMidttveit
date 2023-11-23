@@ -12,10 +12,14 @@ footer {
 }
 
 .footer-content a,
-#copyright {
+.copyright {
     color: #F7F4F3;
     font-size: .9rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+.social-media-footer i {
+    color: #F7F4F3;
 }
 
 .copyright,
