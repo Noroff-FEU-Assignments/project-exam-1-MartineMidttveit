@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Travel with Estelle. I'm a travel enthusiast and I like to share my adventures. Feel free to tag along!">
+    <meta name="description" content="Discover my travel passion! Learn about my adventures, insights, and wanderlust on the about page of my travel blog.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,31 +14,61 @@
 
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
-    <link rel="stylesheet" href="/CSS/frontpage.css">
     <link rel="stylesheet" href="/CSS/about.css">
     <link rel="stylesheet" href="/CSS/style.css">
 
     <title>Travel with Estelle | About</title>
 
     <script defer src="/JS/typewriting.js"></script>
-    <script defer src="/JS/slideshow.js"></script>
+    <script defer src="/JS/hamburger.js"></script>
+    <script defer src="/JS/eBook.js"></script>
 
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:3743782,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
   </head>
 <body>
 
 <!--HEADER-->
 
-<header class="flex-center">
-    <a href="/index.html">TRAVEL WITH ESTELLE</a>
+<header>
+    <div class="header-content">
+      <a href="/index.html" id="logo" class="size">
+        TRAVEL WITH ESTELLE
+      </a>
+  
+        <nav class="header-nav">
+          <a href="/index.html" class="nav-link">HOME</a>
+          <a href="/HTML/contact.html" class="nav-link">CONTACT</a>
+          <a href="/HTML/about.html" class="nav-link">ABOUT</a>
+          <a href="/HTML/allposts.html" class="nav-link">POSTS</a>
+  
+            <form class="search-mobile">
+                <input type="search" id="search-mobile" placeholder="Search..." aria-label="Searchbar"></input>
+                <button class="search-btn-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+  
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close hidden-element"></i>
+        </div>
+  
+        <span class="search-container">
+            <input type="search" id="search">
+            <label for="search" id="search-label"></label>
+        </span>
+    </div>
 </header>
-
-<div class="banner flex-center">
-  <nav class="header-nav flex-space">
-    <a href="/HTML/contact.html" class="nav-link">CONTACT</a>
-    <a href="/HTML/about.html" class="nav-link">ABOUT</a>
-    <a href="/HTML/allposts.html" class="nav-link">POSTS</a>
-    </nav>
-</div>
 
 <!--WRAPPER START -->
 
@@ -46,8 +76,8 @@
 
 <!--ABOUT TOP-->
 
-<section class="palms-container background flex-space">
-    <img src="/IMAGES/About/estelle.jpg" alt="" class="rounded">
+<section class="background flex-space">
+    <img src="/IMAGES/About/estelle.jpg" alt="A blonde woman jumping on a path through a field of sunflowers" class="rounded">
 
     <article class="about-text flex-column">
         <span class="turquoise small-title">JUST A LITTLE BIT ABOUT ME</span>
@@ -62,7 +92,7 @@
 
         <span class="bold">Got a question? Please contact me.</span>
 
-        <button class="turquoise-button">CONTACT ME</button>
+        <a href="/HTML/contact.html" class="turquoise-button">CONTACT ME</a>
     </article>
 </section>
 
@@ -72,7 +102,7 @@
     <article class="myJourney">
         <h2 class="medium-title turquoise">HOW IT STARTED...</h2>
         <p>
-            In 2016, I embarked on a journey that would lead to the creation of my travel blog, and over the past few years, 
+            In 2020, I embarked on a journey that would lead to the creation of my travel blog, and over the past few years, 
             this blog has been a gateway to countless adventures and cultural discoveries. I've had the incredible opportunity to explore diverse 
             countries and immerse myself in a multitude of cultures, each experience leaving an indelible mark on my perspective. The richness of 
             the world's landscapes, cuisines, traditions, and the people I've encountered along the way has been a constant source of inspiration. 
@@ -85,17 +115,17 @@
 
     <div class="funfacts">
         <div class="funfact rounded flex-center">
-            <span class="big">65</span>
+            <span class="big">37</span>
             <p>COUNTRIES EXPLORED</p>
         </div>
     
         <div class="funfact rounded flex-center">
-            <span class="big">450</span>
+            <span class="big">360</span>
             <p>PLANES BOARDED</p>
         </div>
     
         <div class="funfact rounded flex-center">
-            <span class="big">828.345</span>
+            <span class="big">428.345</span>
             <p>MILES FLOWN</p>
         </div>
     </div>
@@ -103,55 +133,102 @@
 
 <!--FAVORITE DESTINATION -->
 
-<section class="favorite-destination">
+<section class="favorite-destination flex-column">
     <div class="headlines flex-space">
         <div class="main-headlines">
-            <span class="turquoise small-title">MY FAVORITE DESTINATION</span>
-            <h2 class="medium-title">SEYCHELLES, EAST-AFRICA</h2>
+            <span class="turquoise small-title">MY FAVORITE</span>
+            <h2 class="medium-title"> DESTINATIONS</h2>
         </div>
     </div>
 
-    <article class="seychelles">
-        <p>
-            Nestled in the heart of the Indian Ocean, the Seychelles, often mistaken for an East African paradise, is unquestionably my 
-            favorite destination. This archipelago, consisting of 115 pristine islands, boasts some of the world's most stunning and untouched 
-            natural beauty. With its powdery white sand beaches framed by crystal-clear turquoise waters, lush tropical forests teeming with unique 
-            flora and fauna, and a vibrant Creole culture, the Seychelles is a place of unparalleled charm and allure. <span class="break">It offers a range of experiences, 
+    <div class="favDestinations">
+        <img src="/IMAGES/About/seychelles.jpg" alt="Two sunbeds on a white beach close to a forrest of palm trees." class="rounded size">
+        <article class="favText">  
+        <span class="bigNumber one">1</span>
+            <h3 class="medium-title">SEYCHELLES, EAST-AFRICA</h3>
+            <p>
+            Seychelles, often mistaken for an East African paradise, is unquestionably my favorite destination. 
+            With its powdery white sand beaches framed by crystal-clear turquoise waters, lush tropical forests teeming with unique 
+            flora and fauna, the Seychelles is a place of unparalleled charm and allure. It offers a range of experiences, 
             from relaxing on secluded beaches to thrilling water sports and unforgettable encounters with marine life, making it a must-visit destination 
-            for any traveler seeking a slice of paradise in East Africa. <a href="#" class="underline">Read more about Seychelles here.</a></span>
-        </p>  
-    </article>
+            for any traveler seeking a slice of paradise in East Africa.
+            </p>
+        </article> 
+    </div>
 
-    <div class="slide-show">
-        <div class="slider">
-            <img src="/IMAGES/About/seychelles.jpg" alt="" class="slider-img rounded">
-            <img src="/IMAGES/About/seychelles-2.jpg" alt="" class="slider-img rounded">
-            <img src="/IMAGES/About/seychelles-3.jpg" alt="" class="slider-img rounded">
-        </div>
+    <div class="favDestinations maldives">
+        <article class="favText">
+            <span class="bigNumber two">2</span>
+            <h3 class="medium-title">MALDIVES, SOUTH-ASIA</h3>
+            <p>
+            The Maldivesholds a special place in my heart as one of my favorite destination. With its 
+            picture-perfect islands boasting pristine white sandy beaches and translucent turquoise waters, it's a haven of serenity and natural beauty. 
+            The overwater bungalows perched above the coral reefs offer a glimpse into an aquatic wonderland teeming with colorful marine life. The Maldives' 
+            tranquil ambiance, breathtaking sunsets, and the gentle lull of the ocean waves create an unforgettable atmosphere that enchants the soul. 
+            </p>
+        </article> 
+        <img src="/IMAGES/About/maldives.jpg" alt="Bungalows in the azure blue water in the Maldives" class="rounded size">
+    </div>
+
+    <div class="favDestinations beijing">
+        <img src="/IMAGES/About/beijing.jpg" alt="A temple near the water in Beijing" class="rounded size">
+        <article class="favText">
+            <span class="bigNumber three">3</span>
+            <h3 class="medium-title">BEIJING, EAST-ASIA</h3>
+            <p>
+            Beijing, a city steeped in history and culture, holds a unique allure as my third favorite destination. From the iconic Great Wall snaking across 
+            rugged landscapes to the magnificent Forbidden City's grandeur, every corner breathes tales of China's rich past. The juxtaposition of ancient traditions 
+            against modernity captivates, and sleek skyscrapers dotting the skyline. Exploring the temples, savoring delectable cuisine, and witnessing the fusion of 
+            tradition and innovation in this metropolis evoke a sense of wonder and fascination.
+            </p>
+      </article> 
     </div>
 </section>
 
 <!-- E-BOOK -->
 
 <div class="eBook flex-column">
-    <div class="signUp flex-center">
-        <h2 class="blog-title">GET MY E-BOOK FOR FREE</h2>
-        <p>
-            Get my e-book on travel for free by entering your e-mail, unlocking a world of exciting destinations and travel tips. 
-            Grab your copy now and embark on your next adventure without spending a dime!
-        </p>
+  <div class="signUp flex-center">
+      <h2 class="medium-title eBookHeadline">GET MY E-BOOK FOR FREE</h2>
+      <p class="eBookText">
+        Get my e-book about travelling for free by signing up with your e-mail, unlocking a world of exciting destinations and travel tips.
+        Also get notified about new posts & get travel tips weekly. Grab your copy now and embark on your next adventure without spending a dime!
+      </p>
 
-        <form class="email">
-            <input type="text" placeholder="Your e-mail...">
-        </form>
-    </div>
+      <form class="email">
+        <input type="text" placeholder="Your e-mail..." aria-label="Type your e-mail in the container" class="email-address" required>
+        <span class="email-error"></span>
+      </form>
+
+      <button class="button signUpBtn">SIGN UP</button>
+  </div>
 </div>
+
+<!--FOOTER-->
+
+<footer>
+    <div class="footer-content flex-space">
+      <div class="copyright">
+        <span id="copyright">© COPYRIGHT 2023</span>
+        <a href="/index.html" id="logo-footer">TRAVEL WITH ESTELLE</a>
+        <a href="#" id="rights"><span id="separator">|</span> ALL RIGHTS RESERVED</a>
+      </div>
+  
+      <div class="privacy">
+        <a href="#" id="policy">DISCLOSURE & <span>PRIVACY POLICY</span></a>
+        <nav class="social-media-footer">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-pinterest"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </nav>
+      </div>
+    </div>
+  </footer>
 
 <!--WRAPPER END -->
 
 </div>
-
-<footer></footer>
 
 </body>
 </html>

@@ -1,10 +1,10 @@
-.palms-container {
+.background {
     padding: 8% 10%;
-    gap: 4rem;
-    background-image: url(/IMAGES/About/map.png);
+    gap: 8rem;
+    background-color: #F7F4F3;
 }
 
-.palms-container img {
+.background img {
     width: 35%;
     height: 85%;
     transform: rotate(-4deg);
@@ -16,10 +16,15 @@
 
 .about-text p {
     margin-bottom: 3%;
+    width: 85%;
 }
 
 .about-text .turquoise-button {
     max-width: 190px;
+}
+
+.typewriting {
+    height: 50px;
 }
 
 /* JOURNEY */
@@ -46,11 +51,11 @@
 }
 
 .funfact {
-    border: 1px solid #087268;
     padding: 10%;
     flex-direction: column;
     color: #032A26;
     text-align: center;
+    border: 1px solid #032A26;
 }
 
 .big {
@@ -62,56 +67,55 @@
 /* FAVORITE DESTINATION */
 
 .favorite-destination {
-    padding: 5% 10%;
+    padding: 5% 10% 12%;
+    gap: 1.5rem;
 }
 
 .favorite-destination .headlines {
     padding-bottom: 1rem;
 }
 
-.readMore {
-    color: #1E1A16;
+.favDestinations {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 4rem;
+    height: 450px;
 }
 
-.readMore:hover {
-    color: #087268;
-    transition: .3s;
-    font-weight: 600;
+.bigNumber {
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 1;
+    display: flex;
+    align-items: center;
 }
 
-/* SLIDESHOW */
-
-.slide-show {
-    height: 600px;
-    margin: 3% 0%;
+.one {
+    color: #FFA53A;
 }
 
-.slider {
-    position: relative;
+.two {
+    color: #032A26;
 }
 
-.slider-img {
-    position: absolute;
-    max-height: 600px;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 2s;
+.three {
+    color: #8AB4A9;
+    padding-bottom: 1rem;
 }
 
-.slider-img.active {
-    opacity: 1;
+.maldives,
+.beijing {
+    padding-top: 3rem;
 }
 
 /* MOBILE & IPAD */
 
 @media (min-width: 0px) and (max-width: 1180px) {
-    .palms-container {
+    .background {
         flex-direction: column;
     }
 
-    .palms-container img {
+    .background img {
         transform: unset;
     }
 
@@ -126,21 +130,39 @@
     .about-text p {
         width: 100%;
     }
+
+    .favorite-destination .headlines {
+        padding: 0;
+    }
+
+    .favDestinations {
+        display: flex;
+        flex-direction: column;
+        height: unset;
+    }
+
+    .maldives img {
+        order: 1;
+    }
+
+    .maldives .favText {
+        order: 2;
+    }
 }
 
 /* MOBILE */
 
 @media (min-width: 0px) and (max-width: 767px) {
-    .palms-container {
+    .background {
         gap: 2rem;
         padding: 10% 10% 15%;
     }
 
-    .palms-container img {
+    .background img {
         width: 80%;
     }
 
-    .palms-container .turquoise-button {
+    .background .turquoise-button {
         margin-top: 8%;
     }
 
@@ -160,8 +182,7 @@
         padding-bottom: 5%;
     }
 
-    .myJourney p,
-    .seychelles p {
+    .myJourney p {
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -183,31 +204,41 @@
     }
 
     .favorite-destination {
-        padding: 7% 10% 0%;
+        padding: 7% 10% 15%;
     }
 
-    .seychelles p {
-        padding-bottom: 10%;
+    .favDestinations {
+        padding-top: 0;
+        gap: .6rem;
     }
 
-    .slide-show {
-        height: 300px;
+    .bigNumber {
+        font-size: 3rem;
+    }
+
+    .maldives,
+    .beijing {
+        padding-top: 1.5rem;
+    }
+
+    .three {
+        padding-bottom: .4rem;
     }
 }
 
 /* IPAD */
 
 @media (min-width: 768px) and (max-width: 1180px) {
-    .palms-container {
+    .background {
         gap: 3rem;
         padding: 10%;
     }
 
-    .palms-container img {
+    .background img {
         width: 50%;
     }
 
-    .palms-container .turquoise-button {
+    .background .turquoise-button {
         margin-top: 6%;
     }
 
@@ -233,11 +264,20 @@
     }
 
     .favorite-destination {
-        padding: 5% 10% 0%;
+        padding: 5% 10% 15%;
     }
 
-    .seychelles p {
-        padding-bottom: 4%;
+    .favDestinations {
+        gap: 1.5rem;
+    }
+
+    .maldives,
+    .beijing {
+        padding-top: 2rem;
+    }
+
+    .bigNumber {
+        font-size: 6rem;
     }
 }
 
@@ -246,5 +286,25 @@
 @media (min-width: 1181px) and (max-width: 1440px) {
     .about-text p {
         width: 100%;
+    }
+
+    .favorite-destination {
+        padding-bottom: 10%;
+    }
+
+    .favDestinations {
+        height: fit-content;
+    }
+
+    .favDestinations img {
+        width: 40%;
+    }
+
+    .bigNumber {
+        font-size: 6rem;
+    }
+
+    .three {
+        font-size: 5rem;
     }
 }
