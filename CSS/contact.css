@@ -262,4 +262,8 @@
     .instagram-posts {
         grid-template-rows: 250px;
     }
+
+    .background {
+        padding: 8% 10%;
+    }
 }
