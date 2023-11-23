@@ -30,7 +30,7 @@ p, h1, h2, h3, h4, a, figure {
     margin: 0;
 }
 
-h1, h2, h3, h4, .date, .view-all {
+h1, h2, h3, h4, .date, .view-all, a, button {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -42,7 +42,7 @@ h1, h2, h3, h4, .date, .view-all {
     color: #087268;
 }
 
-.big-title, .medium-title, .small-title, button {
+.big-title, .medium-title, .small-title, button, a, .bold, .underline {
     font-weight: 500;
 }
 
@@ -53,7 +53,6 @@ h1, h2, h3, h4, .date, .view-all {
 .medium-title {
     font-size: 1.4rem;
     padding: .6rem 0;
-    font-weight: 500;
 }
 
 .small-title {
@@ -66,14 +65,9 @@ button,
     font-size: .9rem;
 }
 
-.bold {
-    font-weight: 500;
-} 
-
 .underline {
     border-bottom: 1px solid #1E1A16;
     color: #1E1A16;
-    font-weight: 500;
 } 
 
 .underline:hover {
@@ -106,8 +100,6 @@ button {
     max-width: 190px;
     padding: 0.7rem 2rem;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
 }
 
 .border-button {
@@ -206,10 +198,6 @@ img {
     border-radius: 15px;
 }
 
-.half-rounded {
-    border-radius: 15px 15px 0px 0px;
-}
-
 /* LINE */
 
 .line {
@@ -261,17 +249,6 @@ img {
     position: relative;
 }
 
-.filter {
-    background: rgba(255, 255, 255, 0.21);
-    position: absolute;
-    opacity: 0;
-}
-
-.filter:hover {
-    opacity: 1;
-    transition: .5s;
-}
-
 /* FORMS */
 
 input,
@@ -299,7 +276,7 @@ textarea {
     }
 
     .viewAll a.view-all {
-        font-size: 12px;
+        font-size: .8rem;
     }
 
     p {
@@ -307,9 +284,7 @@ textarea {
     }
 
     .turquoise-button,
-    .light-button,
     .border-button {
-        padding: 0.5rem 1.5rem;
         font-size: .8rem;
         max-width: 150px;
     }
@@ -320,6 +295,10 @@ textarea {
 
     .medium-title {
         font-size: 1rem;
+    }
+
+    .border-button {
+        padding: 0.5rem 1.5rem;
     }
 
     .small-title,
