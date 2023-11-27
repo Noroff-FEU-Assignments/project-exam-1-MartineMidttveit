@@ -1,0 +1,186 @@
+/* BACKGROUND + TEXT */
+  
+.hero-section {
+    background-image: url(/IMAGES/Frontpage/background.jpg);
+    height: 950px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .hero-section-mobile {
+    display: none;
+  }
+    
+  .hero-text,
+  .hero-images {
+    position: absolute;
+  }
+    
+  .hero-text {
+    width: 30%;
+    left: 10%;
+    top: 31%;
+  }
+  
+  .hero-text .location {
+    padding-bottom: .5rem;
+  }
+  
+  .hero-text .big-title {
+    padding-bottom: 1rem;
+  }
+    
+  .hero-text,
+  .hero-text p {
+    color: #fdfcfb;
+    font-size: 1rem;
+  }
+  
+  .hero-text .turquoise-button {
+    margin-top: 6%;
+  }
+    
+  .hero-images {
+    width: 50%;
+    right: 0;
+    top: 28%;
+    overflow: hidden;
+  }
+  
+  .hero-images .arrow-left:hover,
+  .hero-images .arrow-right:hover {
+    transition: .4s;
+  }
+    
+  .all-images {
+    position: relative;
+    width: 340px;
+    height: 430px;
+  }
+    
+  .hero-text,
+  .hero-images {
+    position: absolute;
+  }
+  
+  .location {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+    
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.4s ease-in;
+  }
+    
+  .img-1 {
+    transform: translateX(0);
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+  }
+    
+  .img-2 {
+    transform: translateX(120%);
+    width: 90%;
+    height: 90%;
+    margin-top: 5%;
+  }
+    
+  .img-3 {
+    transform: translateX(255%);
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+  }
+  
+  .img-4,
+  .img-5,
+  .img-6 {
+    transform: translateX(440%);
+    width: 70%;
+    height: 70%;
+    margin-top: 15%;
+  }
+  
+  .img-6 {
+    opacity: 0;
+  }
+  
+  .img-7 {
+    transform: translateX(-110%);
+    opacity: 0;
+    width: 90%;
+    height: 90%;
+    margin-top: 5%;
+  }
+  
+  .titles {
+    position: absolute;
+    right: 31.5%;
+    top: 19%;
+    width: 340px;
+    text-align: center;
+  }
+  
+  .titles .blog-title {
+    color: #F7F4F3;
+    font-size: 1.2rem;
+    padding: .3rem 0 .8rem;
+  }
+  
+  .arrow-buttons {
+    width: 130px;
+    padding-top: 5%;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    background: rgba(244, 244, 244, 0.75);
+    backdrop-filter: blur(10.5px);
+    border: none;
+    color: #1E1A16;
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0.2, 0.1);
+  }
+  
+  .arrow-left:hover,
+  .arrow-right:hover {
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (min-width: 0) and (max-width:1180px) {
+   
+    .hero-section {
+      display: none;
+    } 
+  
+    .hero-section-mobile {
+      display: block;
+      background-image: url(/IMAGES/Allposts/beijing.jpg);
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width:1180px) {
+    .hero-section-mobile {
+      height: 300px;
+      background-position: 100% 60%;
+    }
+  }
+  
+  @media (min-width: 0px) and (max-width:767px) {
+    .hero-section-mobile {
+      height: 150px;
+      background-position: 100% 60%;
+    }
+  }
+  
+  @media (min-width: 1181px) and (max-width:1440px) {
+    .titles {
+      right: 27.5%;
+    }
+  }

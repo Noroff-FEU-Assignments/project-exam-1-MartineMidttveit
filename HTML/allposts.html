@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore diverse travel experiences! Discover a collection of captivating posts on my travel blog, featuring attractions, travelguides, and general.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Tenor+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/heroimg.css">
+    <link rel="stylesheet" href="/CSS/loader.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/CSS/allposts.css">
+    <link rel="stylesheet" href="/CSS/smallposts.css">
+
+    <title>Travel with Estelle | Posts</title>
+
+    <script type="module" src="/JS/PAGES/allPosts.js"></script>
+    <script defer src="/JS/slider.js"></script>
+    <script defer src="/JS/hamburger.js"></script>
+    <script defer src="/JS/eBook.js"></script>
+  </head>
+<body>
+
+<!--HEADER-->
+
+<header>
+    <div class="header-content flex-space">
+      <a href="/index.html" id="logo" class="size">
+        TRAVEL WITH ESTELLE
+      </a>
+  
+        <nav class="header-nav">
+          <a href="/index.html" class="nav-link">HOME</a>
+          <a href="/HTML/contact.html" class="nav-link">CONTACT</a>
+          <a href="/HTML/about.html" class="nav-link">ABOUT</a>
+          <a href="/HTML/allposts.html" class="nav-link">POSTS</a>
+  
+            <form class="search-mobile">
+                <input type="search" id="search-mobile" placeholder="Search..." aria-label="Searchbar for mobile">
+                <button class="search-btn-mobile" aria-label="search button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </nav>
+  
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close hidden-element"></i>
+        </div>
+  
+        <span class="search-container">
+            <input type="search" id="search">
+            <label for="search" id="search-label" aria-label="Searchbar for desktop"></label>
+        </span>
+    </div>
+</header>
+
+<!--WRAPPER START -->
+
+<div class="wrapper">
+
+<!--TOP-->
+
+<!--HERO SECTION -->
+
+<div class="hero-section-mobile background"></div>
+
+<section class="hero-section background" aria-label="a blurry landscape image of a green field of grass and mountains">
+      <div class="hero-text">
+  
+          <h1 class="big-title">AFRICA</h1>
+          <p>
+            Embarking on an African adventure was a whirlwind of excitement. The safari brought close encounters 
+            with majestic wildlife amid the sprawling savannah. Zanzibar's underwater world dazzled with vibrant 
+            marine life while diving in its crystal-clear waters. The journey concluded with serene moments on 
+            white sandy beaches, where the vibrant culture and warm hospitality of the locals left an indelible 
+            mark. Scroll through the posts to read more! 
+          </p>
+      </div> 
+
+      <div class="titles">
+        <h3 class="small-title yellow" id="type"></h3>
+        <h2 class="blog-title" id="blogTitle"></h2>
+      </div>
+      
+      <div class="hero-images">
+          <div class="all-images"></div>
+  
+          <div class="arrow-buttons flex-space">
+            <button class="arrow-left flex-center">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="arrow-right flex-center">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+  </section>
+
+<!--SORTING-->
+
+<span class="headline">
+    <h2 class="medium-title">ALL POSTS</h2>
+</span>
+
+<div class="filterSort flex-space">
+    <div class="filterBy">
+        <h3 class="small-title turquoise">FILTER BY CATEGORY:</h3>
+        <div class="filter-btns">
+            <button class="border-button active-category" id="allPosts">ALL POSTS</button>
+            <button class="border-button" id="general">GENERAL</button>
+            <button class="border-button" id="attractions">ATTRACTIONS</button>
+            <button class="border-button" id="travelGuides">TRAVEL GUIDES</button>
+        </div>
+    </div>
+
+    <button class="turquoise-button filter-button">FILTER</button>
+
+    <form action="#" class="sorting">
+        <label for="sortBy" class="small-title turquoise">SORT BY:</label>
+        <select name="sort-by" id="sortBy">
+            <option value="sortingOption">SHOW ALL</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+        </select>
+    </form>
+</div>
+
+<!--ALL POSTS-->
+
+<div class="post-grid loading">
+  <div class="loading-indicator">
+    <span class="loader"></span>
+  </div>
+</div>
+
+<span class="viewMoreContainer flex-center">
+  <button class="button viewMore">VIEW MORE POSTS</button>
+</span>
+
+
+<!-- E-BOOK -->
+
+<section class="eBook flex-column">
+    <div class="signUp flex-center">
+        <h2 class="medium-title eBookHeadline">GET MY E-BOOK FOR FREE</h2>
+        <p class="eBookText">
+          Get my e-book about travelling for free by signing up with your e-mail, unlocking a world of exciting destinations and travel tips.
+          Also get notified about new posts & get travel tips weekly. Grab your copy now and embark on your next adventure without spending a dime!
+        </p>
+  
+        <form class="email">
+          <input type="text" placeholder="Your e-mail..." aria-label="Type your e-mail in the container" class="email-address" required>
+          <span class="email-error"></span>
+        </form>
+  
+        <button class="button signUpBtn">SIGN UP</button>
+    </div>
+</section>
+
+<!--FOOTER-->
+
+<footer>
+    <div class="footer-content flex-space">
+      <div class="copyright">
+        <span id="copyright">© COPYRIGHT 2023</span>
+        <a href="/index.html" id="logo-footer">TRAVEL WITH ESTELLE</a>
+        <a href="#" id="rights"><span id="separator">|</span> ALL RIGHTS RESERVED</a>
+      </div>
+  
+      <div class="privacy">
+        <a href="#" id="policy">DISCLOSURE & <span>PRIVACY POLICY</span></a>
+        <div class="social-media-footer">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!--WRAPPER END -->
+
+</div>
+
+</body>
+</html>
