@@ -1,0 +1,34 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    gap: 1.5rem;
+}
+
+.explore-content {
+    padding: 5% 0%; 
+}
+
+#paragraph2{
+    margin-bottom: 15%;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .image-grid {
+        grid-template-rows: 150px;
+        gap: .5rem;
+        padding: 1rem 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1180px) {
+    #paragraph2 {
+        margin-bottom: 8%;
+    }
+
+    .image-grid {
+        grid-template-rows: 300px;
+    }
+}
+
+
