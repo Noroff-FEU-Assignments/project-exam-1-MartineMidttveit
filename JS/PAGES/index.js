@@ -23,46 +23,39 @@ try {
   
   posts.forEach((post) => postsContainer.appendChild(smallPost(post)));
   
-  const windowWidth = window.innerWidth;
-  let postWidth;
-  if (windowWidth >= 768 && windowWidth <= 1180) {
-    postWidth = 50;
-  } else if (windowWidth <= 767) {
-    postWidth = 100;
-  } else {
-    postWidth = 33;
+  const items = document.querySelectorAll(".post");
+  const itemCount = items.length;
+  const displayCount = 3;
+  let index = 0;
+  
+  function showItems() {
+    items.forEach((item, idx) => {
+      if (idx >= index && idx < index + displayCount) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
   }
-  let latestIndex = 0;
-
-  function updateSlider() {
-    postsContainer.style.transition = "transform 0.6s ease-in-out";
-    postsContainer.style.transform = `translateX(-${postWidth * latestIndex}%)`;
+  
+  function nextSlide() {
+    if (index < itemCount - displayCount) {
+      index++;
+    }
+    showItems();
   }
-
-  latestNextBtn.addEventListener("click", () => {
-    latestIndex++;
-    if (latestIndex >= posts.length) {
-      latestIndex = 0;
-      postsContainer.style.transition = "none";
+  
+  function prevSlide() {
+    if (index > 0) {
+      index--;
     }
-    updateSlider();
-  });
-
-  latestPrevBtn.addEventListener("click", () => {
-    latestIndex--;
-    if (latestIndex < 0) {
-      latestIndex = posts.length - 1;
-      postsContainer.style.transition = "none";
-    }
-    updateSlider();
-  });
-
-  updateSlider();
-
-  window.addEventListener("resize", () => {
-    latestIndex = Math.max(0, Math.min(latestIndex, posts.length - 1));
-    updateSlider();
-  });
+    showItems();
+  }
+  
+  latestPrevBtn.addEventListener("click", prevSlide);
+  latestNextBtn.addEventListener("click", nextSlide);
+  
+  showItems();
   
   const featuredPost1 = posts.find(post => post.attributes.name == "Top 6 in Seychelles")
   const featuredPost2 = posts.find(post => post.attributes.name == "Top 6 while in Beijing")
