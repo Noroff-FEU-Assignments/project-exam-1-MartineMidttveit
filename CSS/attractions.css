@@ -94,14 +94,26 @@
     .info-grid {
         padding: 1rem 0 0;
         gap: 1.5rem;
+        width: 100%;
     }
 
     .priceAge {
         gap: 1rem;
     }
 
-    h4 {
+    #subtitle1 {
+        padding-top: .8rem;
+    }
+
+    h4,
+    #subtitle1,
+    #subtitle3 {
         font-size: .7rem;
+    }
+
+    #subtitle2,
+    #subtitle4 {
+        font-size: 1rem;
     }
 }
 
