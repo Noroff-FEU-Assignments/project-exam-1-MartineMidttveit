@@ -72,16 +72,9 @@
     font-size: 1.8rem;
   }
 
-  .date {
-    font-size: 1rem;
-  }
-
-  .post {
-    height: 600px;
-  }
-
+  .date,
   .post-details .small-title {
-    font-size: .9rem;
+    font-size: .8rem;
   }
 }
 
