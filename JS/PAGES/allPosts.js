@@ -6,8 +6,6 @@ const viewMore = document.querySelector(".viewMore");
 const sortBy = document.querySelector("#sortBy");
 
 const loadingIndicator = document.querySelector(".loading-indicator");
-postGrid.classList.remove("loading")
-loadingIndicator.remove();
 
 try {
   const  posts = await fetchPosts("?populate=postImg");
@@ -18,7 +16,8 @@ try {
     if (i <= 8) postGrid.append(currentPost);
   })
 
-// VIEW MORE BUTTON
+  
+  // VIEW MORE BUTTON
 
   let currPage = 1;
   let filteredAndSortedPosts = posts.data;
@@ -38,7 +37,7 @@ try {
     }
   });
 
-// SORT BY
+  // SORT BY
 
   sortBy.addEventListener("change", (e) => {
     const selectedYear = e.target.value;
@@ -57,7 +56,7 @@ try {
     viewMore.style.display = filteredAndSortedPosts.length <= 9 ? "none" : "block";
   });
 
-// FILTER
+  // FILTER
 
   const generalPosts = posts.data.filter(post => {
       if(post.attributes.type === "GENERAL") return post;
@@ -104,7 +103,7 @@ try {
     });
   });
 
-// HERO
+  // HERO
 
   const africaPosts = posts.data.filter(post => {
       if(post.attributes.continent === "Africa") return post;
@@ -132,7 +131,7 @@ try {
       allImages.appendChild(heroPost)
   }
 
-// BUTTONS HERO
+  // BUTTONS HERO
 
   const imageContainer = document.querySelector(".all-images");
   const images = document.querySelectorAll(".hero-image");
@@ -195,4 +194,7 @@ try {
   container.append(errorIcon);
   postGrid.append(container);
   throw new Error("Error to fetch posts: " + error)
+} finally {
+  postGrid.classList.remove("loading")
+  loadingIndicator.remove();
 }

@@ -9,7 +9,6 @@ const id = params.get("id");
 let post;
 
 const loadingIndicator = document.querySelectorAll(".loading-indicator");
-loadingIndicator.forEach((loader) => loader.remove()); 
 
 const leftSide = document.querySelector(".left-side");
 
@@ -59,8 +58,21 @@ try {
   const titleElement = document.querySelector("title");
   titleElement.textContent = "TWE " + "|" + " " + post.data.attributes.name;
 } catch (error) {
-  leftSide.textContainer = error;
+  const container = document.createElement("div");
+  container.textContent = error;
+  container.classList.add("errorMessage");
+  container.classList.add("flex-center");
+
+  const errorIcon = document.createElement("i");
+  errorIcon.classList.add("fa-solid");
+  errorIcon.classList.add("fa-triangle-exclamation");
+
+  container.append(errorIcon);
+  
+  leftSide.append(container);
   throw new Error("Error to fetch posts: " + error)
+} finally {
+  loadingIndicator.forEach((loader) => loader.remove()); 
 }
 
 background(post);

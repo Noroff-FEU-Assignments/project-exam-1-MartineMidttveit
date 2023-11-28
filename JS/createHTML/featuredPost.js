@@ -3,7 +3,6 @@ export default function featuredPost(data) {
     const container = document.createElement("a");
     container.classList.add("travelguide");
     container.classList.add("rounded");
-    console.log(data)
     container.href = `/HTML/TRAVELGUIDES.html?id=${data.id}`; 
 
     const postImgFigure = document.createElement("figure");
@@ -47,7 +46,7 @@ export default function featuredPost(data) {
 
     const paragraph = document.createElement("p");
     const introText = data.attributes.intro
-    const number = 420;
+    const number = 280;
     
     if (data.attributes.intro.length > number) {
         paragraph.textContent = introText.slice(0, number) + "..."}

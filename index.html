@@ -14,25 +14,18 @@
 
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/smallposts.css">
+    <link rel="stylesheet" href="/CSS/loader.css">
     <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="stylesheet" href="/CSS/frontpage.css">
+    <link rel="stylesheet" href="/CSS/modal.css">
 
-    <title>Travel with Estelle | Contact</title>
+    <title>Travel with Estelle | Home</title>
 
-    <script defer src="/JS/contactform.js"></script>
+    <script defer src="/JS/typewriting.js"></script>
+    <script type="module" src="/JS/PAGES/index.js"></script>
     <script defer src="/JS/hamburger.js"></script>
     <script defer src="/JS/eBook.js"></script>
-
-    <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:3743782,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
   </head>
 <body>
 
@@ -74,27 +67,147 @@
 
 <div class="wrapper">
 
-
-
-
-<!-- E-BOOK -->
-
-<section class="eBook flex-column">
-  <div class="signUp flex-center">
-      <h2 class="medium-title eBookHeadline">GET MY E-BOOK FOR FREE</h2>
-      <p class="eBookText">
-        Get my e-book about travelling for free by signing up with your e-mail, unlocking a world of exciting destinations and travel tips.
-        Also get notified about new posts & get travel tips weekly. Grab your copy now and embark on your next adventure without spending a dime!
+  <!--HERO-->
+  
+  <section class="hero-section">
+    <img src="/IMAGES/Frontpage/heroimage.jpg" alt="A blonde woman looking at the ocean from a balcony" class="size hero-desktop">
+    <img src="/IMAGES/Frontpage/mobilehero.png" alt="A blonde woman looking at the ocean from a balcony" class="size hero-mobile">
+    <img src="/IMAGES/Frontpage/hero-ipad.png" alt="A blonde woman looking at the ocean from a balcony" class="size hero-ipad">
+  
+    <div class="hero-text flex-column">
+      <span class="language">Welcome in English</span>
+      <h1 class="big-title welcome">WELCOME</h1>
+      <p class="hero-paragraph">
+        My name is Estelle, and I hereby welcome you to my traveling blog, where the world is your oyster, and adventure knows no bounds! 
+        Join me in exploring the beauty and diversity of our planet, one destination at a time. Now, lets start exploring!
       </p>
-
-      <form class="email">
-        <input type="text" placeholder="Your e-mail..." aria-label="Type your e-mail in the container" class="email-address" required>
-        <span class="email-error"></span>
-      </form>
-
-      <button class="button signUpBtn">SIGN UP</button>
+  
+      <a href="HTML/allposts.html" class="button flex-center">EXPLORE</a>
+    </div>
+    
+  </section>
+  
+    <!-- LATEST POSTS -->
+  
+    <section class="latest">
+      <div class="headlines flex-space"> 
+        <div>
+          <span class="turquoise small-title">LATEST POSTS</span>
+          <h2 class="week medium-title">IN THE ARCHIVE</h2>
+        </div>
+  
+        <div class="viewAll flex-center">
+          <a href="/HTML/allposts.html" class="view-all">view all</a>
+        </div>
+      </div>
+      <div class="all-posts-container">
+        <div class="all-latest-posts loading">
+          <div class="loading-indicator">
+            <span class="loader"></span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="arrow-selection flex-space">
+        <div class="arrows flex-center">
+          <button class="arrow-left arrowLeft flex-center latest-arrow-left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <p class="desktop-prev">NEWER POSTS</p>
+          <p class="mobile-prev">PREV</p>
+        </div>
+  
+        <div class="arrows flex-center older">
+          <p class="desktop-next">OLDER POSTS</p>
+          <p class="mobile-next">NEXT</p>
+          <button class="arrow-right arrowRight flex-center latest-arrow-right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+  
+  <!-- ABOUT SECTION -->
+  
+  <section class="about flex-space">
+      <figure>
+          <img src="/IMAGES/Frontpage/estelle.jpg" alt="A woman wearing a straw hat sitting next to the pool" class="rounded size">
+      </figure>
+  
+      <div class="about-text flex-column">
+          <span class="turquoise small-title">JUST A LITTLE BIT ABOUT ME</span>
+          <h2 class="typewriting medium-title"></h2>
+          <p>
+              I'm the adventurous spirit steering this blog with my lens and words. Fueled by an unwavering passion for 
+              exploration, I share enthralling stories and capture vibrant snapshots. Join me on my journey as I inspire 
+              others to embrace the excitement of discovery and revel in the beauty of our world. Together, we'll explore 
+              hidden gems, savor unique flavors, and connect with diverse cultures. So, fasten your seatbelts and get ready 
+              for a journey filled with wonders and the indomitable spirit of exploration.
+          </p>
+  
+          <a href="HTML/about.html" class="turquoise-button flex-center">ABOUT ME</a>
+      </div>
+  </section>
+  
+  <!-- FEATURED DESTINATIONS -->
+  
+  <div class="travelguides">
+      <div class="headlines flex-space">
+          <div>
+              <span class="turquoise small-title">FEATURED</span>
+              <h2 class="medium-title">TRAVEL GUIDES</h2>
+          </div>
+  
+          <div class="viewAll flex-center">
+              <a href="/HTML/allposts.html" class="view-all">view all</a>
+          </div>
+      </div>
+  
+      <p class="travelguides-text">
+        Embark on a journey through my favorite destinations, each holding a special place in my heart. From the enchanting islands of Seychelles to the scenic beauty of Croatia, these places have 
+        left an indelible mark on my travel experiences. Join me in unveiling the best-kept secrets of the world through this captivating collection of destinations that I hold dear. Click on the 
+        destinations to explore relevant posts and join the adventure!
+      </p>
+  
+      <div class="featured-travelguide flex-column">
+        <div class="loading-indicator">
+          <span class="loader"></span>
+        </div>
+      </div>
+  
+      <div class="dots flex-center">
+        <div class="dot-btn">
+          <button class="dot flex-center active-dot"></button>
+        </div>
+  
+        <div class="dot-btn">
+          <button class="dot flex-center"></button>
+        </div>
+  
+        <div class="dot-btn">
+          <button class="dot flex-center"></button>
+        </div>
+      </div>
   </div>
-</section>
+  
+  <!-- E-BOOK -->
+  
+  <div class="eBook flex-column">
+      <div class="signUp flex-center">
+          <h2 class="medium-title eBookHeadline">GET MY E-BOOK FOR FREE</h2>
+          <p class="eBookText">
+            Get my e-book about travelling for free by signing up with your e-mail, unlocking a world of exciting destinations and travel tips.
+            Also get notified about new posts & get travel tips weekly. Grab your copy now and embark on your next adventure without spending a dime!
+          </p>
+  
+          <form class="email">
+            <input type="text" placeholder="Your e-mail..." aria-label="Type your e-mail in the container" class="email-address" required>
+            <span class="email-error"></span>
+          </form>
+  
+          <button class="button signUpBtn">SIGN UP</button>
+      </div>
+  </div>
 
 <!--FOOTER-->
 

@@ -8,7 +8,6 @@ const id = params.get("id");
 let post;
 
 const loadingIndicator = document.querySelectorAll(".loading-indicator");
-loadingIndicator.forEach((loader) => loader.remove()); 
 
 const leftSide = document.querySelector(".left-side");
 const moreInfo = document.querySelector(".moreInfo");
@@ -248,9 +247,21 @@ try {
   ageLimit.append(ageIcon, ageLimitation);
 
 } catch (error) {
-  leftSide.textContent = error;
-  moreInfo.textContent = error;
+  const container = document.createElement("div");
+  container.classList.add("errorMessage");
+  container.classList.add("flex-center");
+  container.textContent = error;
+
+  const errorIcon = document.createElement("i");
+  errorIcon.classList.add("fa-solid");
+  errorIcon.classList.add("fa-triangle-exclamation");
+
+  container.append(errorIcon);
+  leftSide.append(container);
+  moreInfo.append(container.cloneNode(true));
   throw new Error("Error to fetch posts: " + error)
+} finally {
+  loadingIndicator.forEach((loader) => loader.remove()); 
 }
 
 document.querySelector(".meta-description").content = post.data.attributes.Meta;

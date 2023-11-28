@@ -9,7 +9,6 @@ const id = params.get("id");
 let post;
 
 const loadingIndicator = document.querySelectorAll(".loading-indicator");
-loadingIndicator.forEach((loader) => loader.remove()); 
 
 const leftSide = document.querySelector(".left-side");
 
@@ -349,6 +348,8 @@ try {
   container.append(errorIcon);
   leftSide.append(container);
   throw new Error("Error to fetch posts: " + error)
+} finally {
+  loadingIndicator.forEach((loader) => loader.remove()); 
 }
 
 background(post);

@@ -5,9 +5,6 @@ import changeWord from "../changeWord.js";
 
 const loadingIndicator = document.querySelectorAll(".loading-indicator");
 
-loadingIndicator.forEach((loader) => loader.remove()); 
-document.querySelector(".all-latest-posts.loading").classList.remove("loading");
-
 const allPosts = document.querySelector(".all-posts-container");
 const postsContainer = document.querySelector(".all-latest-posts");
 const latestPrevBtn = document.querySelector(".latest-arrow-left");
@@ -26,18 +23,45 @@ try {
   
   posts.forEach((post) => postsContainer.appendChild(smallPost(post)));
   
+  const windowWidth = window.innerWidth;
+  let postWidth;
+  if (windowWidth >= 768 && windowWidth <= 1180) {
+    postWidth = 50;
+  } else if (windowWidth <= 767) {
+    postWidth = 100;
+  } else {
+    postWidth = 33;
+  }
   let latestIndex = 0;
+
+  function updateSlider() {
+    postsContainer.style.transition = "transform 0.6s ease-in-out";
+    postsContainer.style.transform = `translateX(-${postWidth * latestIndex}%)`;
+  }
+
   latestNextBtn.addEventListener("click", () => {
-    if (latestIndex >= posts.length -4) latestNextBtn.parentElement.classList.add("newer")
-    if (latestIndex === 0) latestPrevBtn.parentElement.classList.remove("newer")
     latestIndex++;
-    postsContainer.style.transform = `translateX(-${502 * latestIndex}px)`;
+    if (latestIndex >= posts.length) {
+      latestIndex = 0;
+      postsContainer.style.transition = "none";
+    }
+    updateSlider();
   });
+
   latestPrevBtn.addEventListener("click", () => {
-    if (latestIndex >= posts.length - 4) latestNextBtn.parentElement.classList.remove("newer")
-    if (latestIndex === 0) latestPrevBtn.parentElement.classList.add("newer")
     latestIndex--;
-    postsContainer.style.transform = `translateX(-${502 * latestIndex}px)`;
+    if (latestIndex < 0) {
+      latestIndex = posts.length - 1;
+      postsContainer.style.transition = "none";
+    }
+    updateSlider();
+  });
+
+  updateSlider();
+
+  window.addEventListener("resize", () => {
+    latestIndex = Math.max(0, Math.min(latestIndex, posts.length - 1));
+    updateSlider();
   });
   
   const featuredPost1 = posts.find(post => post.attributes.name == "Top 6 in Seychelles")
@@ -89,6 +113,9 @@ try {
   allPosts.append(container);
   featuredContainer.append(container.cloneNode(true));
   throw new Error("Error to fetch posts: " + error)
+} finally {
+  loadingIndicator.forEach((loader) => loader.remove()); 
+  document.querySelector(".all-latest-posts.loading").classList.remove("loading");
 }
 
 changeWord();
