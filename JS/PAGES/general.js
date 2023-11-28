@@ -7,9 +7,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 let post;
-
 const loadingIndicator = document.querySelectorAll(".loading-indicator");
-
 const leftSide = document.querySelector(".left-side");
 
 try {

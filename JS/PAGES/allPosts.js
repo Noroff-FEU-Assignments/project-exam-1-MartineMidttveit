@@ -16,8 +16,7 @@ try {
     if (i <= 8) postGrid.append(currentPost);
   })
 
-  
-  // VIEW MORE BUTTON
+// VIEW MORE BUTTON
 
   let currPage = 1;
   let filteredAndSortedPosts = posts.data;
@@ -37,7 +36,7 @@ try {
     }
   });
 
-  // SORT BY
+// SORT BY
 
   sortBy.addEventListener("change", (e) => {
     const selectedYear = e.target.value;
@@ -117,7 +116,6 @@ try {
       const heroPost = document.createElement("a");
       heroPost.classList.add("hero-posts");
       heroPost.href = `/HTML/${africaPosts[i].attributes.type}.html?id=${africaPosts[i].id}`;
-
 
       const heroImage = document.createElement("img");
       heroImage.dataset.title = blogTitle.textContent = africaPosts[i].attributes.name;

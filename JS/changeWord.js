@@ -2,7 +2,6 @@ export default function changeWord() {
 
     const welcome = document.querySelector(".welcome");
     const language = document.querySelector(".language")
-    
     const land = [
         "Welcome in English", 
         "Welcome in Spanish", 

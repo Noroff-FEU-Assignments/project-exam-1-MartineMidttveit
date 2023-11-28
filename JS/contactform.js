@@ -163,6 +163,8 @@ textarea.addEventListener("input", (e) => {
         }
     })
 
+// SEND-BTN
+
   sendBtn.addEventListener('click', (e) => {
   e.preventDefault();
     if(validName && validEmail && validSubject && validTextarea) {
