@@ -7,8 +7,8 @@ const loadingIndicator = document.querySelectorAll(".loading-indicator");
 
 const allPosts = document.querySelector(".all-posts-container");
 const postsContainer = document.querySelector(".all-latest-posts");
-const latestPrevBtn = document.querySelector(".latest-arrow-left");
-const latestNextBtn = document.querySelector(".latest-arrow-right");
+const latestPrevBtn = document.querySelector(".left");
+const latestNextBtn = document.querySelector(".right");
 const featuredContainer = document.querySelector(".featured-travelguide");
 
 let posts;

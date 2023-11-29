@@ -46,6 +46,18 @@
     font-size: .9rem;
 }
 
+.arrows {
+    display: flex;
+    gap: 2rem;
+}
+
+.arrow-left,
+.arrow-right {
+    border: 2px solid #087268;
+    background-color: transparent;
+    color: #087268;
+}
+
 /* LEFT SIDE */
 
 .blog-content {

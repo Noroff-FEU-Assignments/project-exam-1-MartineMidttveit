@@ -147,6 +147,10 @@ button {
   font-size: 1.1rem;
 }
 
+.arrows p {
+    cursor: pointer;
+}
+
 /* DISPLAYS */
 
 .flex-center {

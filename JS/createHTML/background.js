@@ -8,13 +8,13 @@ export default function background(post) {
     const arrowSelection = document.createElement("div");
     arrowSelection.classList.add("arrow-selection");
 
-    const arrows = document.createElement("div");
+    const arrows = document.createElement("a");
     arrows.classList.add("arrows");
+    arrows.href = `/HTML/allposts.html`;
 
-    const arrowLeft = document.createElement("a");
+    const arrowLeft = document.createElement("button");
     arrowLeft.classList.add("arrow-left");
     arrowLeft.classList.add("flex-center");
-    arrowLeft.href = `/HTML/allposts.html`;
 
     const chevron = document.createElement("i");
     chevron.classList.add("fa-solid");
