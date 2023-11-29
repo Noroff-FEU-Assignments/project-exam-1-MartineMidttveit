@@ -169,6 +169,8 @@ textarea.addEventListener("input", (e) => {
   e.preventDefault();
     if(validName && validEmail && validSubject && validTextarea) {
       sendBtn.textContent = "SENT";
+      sendBtn.style.backgroundColor = "#F6A63F";
+      sendBtn.style.color = "#1E1A16"
       nameInput.value = "";
       emailInput.value = "";
       subjectInput.value = "";
