@@ -41,6 +41,7 @@ npm run start
 </a> Martine Midttveit. 
 
 ## ACKNOWLEDGEMENTS
+The images used across various pages are sourced from two primary places: Unsplash and Midjourney-generated images. The Unsplash-sourced images are organized below, categorized based on the pages they are featured on, along with corresponding links to their sources:
 
 ### Frontpage: 
 - Woman by the pool: https://unsplash.com/photos/woman-sitting-on-poolside-setting-both-of-her-feet-on-pool-h0AnGGgseio
